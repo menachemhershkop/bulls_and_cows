@@ -1,7 +1,9 @@
 def score_guess(secret: str, guess: str) -> tuple[int, int]:
     bulls=0
     cows=0
+
     for i in range(len(secret)):
+        print("guess", guess[i])
         if guess[i]== secret[i]:
             bulls+=1
         elif guess[i] in secret:
